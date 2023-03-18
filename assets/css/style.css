@@ -1,11 +1,49 @@
+* {
+    font-family: courier, courier new, serif;
+}
+
+body {
+    background-color: rgb(49, 48, 48);
+}
 
 header{
     margin: 0 10 0 10;
+    padding: 20px 20px 30px 20px;
+    color: rgb(224, 191, 4);
+    border-right: 20px solid rgb(224, 191, 4);
+    border-bottom: 40px solid rgb(224, 191, 4);
 }
 
-#headercontainer {
+#title {
+
+    margin-left: 25px;
+    font-size: 40px;
+}
+
+
+#headercontainer, #aboutme, #aboutmewordcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
 
+#aboutme {
+    justify-content: flex-start;
+    border-right: 20px solid rgb(224, 191, 4);
+    border-bottom: 40px solid rgb(224, 191, 4);
+    color: rgb(224, 191, 4);
+    flex-wrap: nowrap;
+
+}
+
+#aboutmewordcontainer{
+    padding: 20px;
+}
+
+#aboutmedesc {
+    border-left: 20px solid rgb(224, 191, 4);
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
 }
